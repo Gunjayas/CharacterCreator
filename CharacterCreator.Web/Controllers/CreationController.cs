@@ -78,6 +78,8 @@ namespace CharacterCreator.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id,FormCollection form)
         {
+            db.Delete(id);
+            return RedirectToAction("Index");
 
         }
 

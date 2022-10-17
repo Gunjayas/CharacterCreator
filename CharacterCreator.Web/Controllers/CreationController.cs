@@ -79,6 +79,7 @@ namespace CharacterCreator.Web.Controllers
         public ActionResult Delete(int id,FormCollection form)
         {
             db.Delete(id);
+
             return RedirectToAction("Index");
 
         }
